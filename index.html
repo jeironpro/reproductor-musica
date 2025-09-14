@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor M&uacute;sica</title>
+    <link rel="icon" href="img/reproductor.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="contenedor-reproductor" id="contenedor-reproductor">
+            <img src="img/volver.png" alt="CANCION" class="volver">
+            <div id="reproductor">
+                <div class="contenedor-icono-letra">
+                    <img src="img/letras.png" alt="LETRAS" class="icono-letra">
+                </div>
+                <div class="contenedor-icono-listado">
+                    <img src="img/listaReproduccion.png" alt="LETRAS" class="icono-listado">
+                </div>
+                <div class="contenedor-cancion">
+                    <img src="img/musica.png" alt="CANCION" id="imagen-cancion" class="imagen-cancion">
+                </div>
+                <div id="titulo-cancion" class="titulo-cancion">
+                    <!-- El titulo de la cancion se genera dinamicamente desde el javascript -->
+                </div>
+                <div class="barra-progreso">
+                    <input type="range" id="progreso" class="progreso" min="0" max="100" value="0">
+                </div>
+                <div class="contenedor-iconos">
+                    <i class="fas fa-step-backward" id="anterior"></i>
+                    <i class="fas fa-play" id="reproducir"></i>
+                    <i class="fas fa-pause" id="pausar" style="display: none;"></i>
+                    <i class="fas fa-step-forward" id="siguiente"></i>
+                </div>
+            </div>
+            <div id="letra-cancion">
+                <!-- La letra se genera dinamicamente desde el javascript -->
+            </div>
+            <div id="listado-canciones">
+                <!-- El listado de canciones se genera dinamicamente desde el javascript -->
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/25da21ab57.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
