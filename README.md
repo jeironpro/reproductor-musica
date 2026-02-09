@@ -1,4 +1,4 @@
-# reproductor-musica
+# web-reproductor-musica
 
 ## 📌 Descripción
 Este proyecto forma parte de mi portafolio personal.  
